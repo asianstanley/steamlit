@@ -25,26 +25,19 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 
-
-plt.rcParams['font.family'] = 'Tahoma'
+plt.rcParams['font.family'] = 'DejaVu Sans'
 plt.rcParams['axes.unicode_minus'] = False
+
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-pdfmetrics.registerFont(
-    TTFont(
-        'Tahoma',
-        r'C:\Windows\Fonts\tahoma.ttf'
-    )
+
+import streamlit as st
+
+st.set_page_config(
+    page_title="SMT Error Dashboard",
+    layout="wide"
 )
 
-pdfmetrics.registerFont(
-    TTFont(
-        'Tahoma-Bold',
-        r'C:\Windows\Fonts\tahomabd.ttf'
-    )
-)
-
+canvas.setFont("Helvetica", 12)
 
 st.set_page_config(page_title="SMT Error Dashboard", layout="wide")
 
