@@ -37,7 +37,7 @@ st.set_page_config(
     layout="wide"
 )
 
-canvas.setFont("Helvetica", 12)
+
 
 st.set_page_config(page_title="SMT Error Dashboard", layout="wide")
 
